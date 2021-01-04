@@ -19,7 +19,7 @@ class SongFinder extends Component {
         axios.get('/api/fresh-songs')
         .then(response => {
             this.setState({freshSongs: response.data})
-            console.log(response.data)
+            // console.log(response.data)
         })
         .catch(err => console.error(err))
     }

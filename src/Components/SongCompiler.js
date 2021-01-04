@@ -17,7 +17,7 @@ class SongCompiler extends Component {
         return (
             <div onClick={this.handleAdd}>
                 <img src={this.props.song.img} alt={this.props.song.name}/>
-                <p>{this.props.song.name}</p>
+                <p className="song-title">{this.props.song.name}</p>
             </div>
         )
     }

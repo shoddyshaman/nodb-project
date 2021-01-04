@@ -13,7 +13,7 @@ const Playlist = props => {
     return (
         <div>
             <h1>My Playlist</h1>
-            <div className="song-flex">{mappedSong}</div>
+            <div className="song-flex-playlist">{mappedSong}</div>
         </div>
     )
 }

@@ -24,7 +24,7 @@ class Track extends Component {
 
     render() {
         return (
-            <div>
+            <div className="playlist-div">
                 <img src={this.props.song.image} alt={this.props.song.name}/>
                 {this.state.isEditing
                 ? (
@@ -37,11 +37,11 @@ class Track extends Component {
                 )
                 : (
                     <div>
-                        <p>{this.props.song.name}</p>
+                        <p className="song-title">{this.props.song.name}</p>
                         <button onClick={this.handleToggle}>Edit Song</button>
+                        <button onClick={()=> this.props.removeFn(this.props.song.id)}>Remove from Playlist</button>
                     </div>
             )}
-            <button onClick={()=> this.props.removeFn(this.props.song.id)}>Remove from Playlist</button>
             </div>
         )
     }
