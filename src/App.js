@@ -17,7 +17,7 @@ class App extends Component {
     axios.get('/api/added-song')
     .then(res => {
       this.setState({addedSong: res.data});
-      // console.log(res.data)
+      // console.log(this.state.addedSong)
     })
     .catch(err => console.error(err));
   }
@@ -26,6 +26,7 @@ class App extends Component {
     axios.post('/api/added-song',{song: song})
     .then(res => {
       this.setState({addedSong: res.data});
+      // console.log(this.state.addedSong)
     })
     .catch(err => console.error(err));
   }

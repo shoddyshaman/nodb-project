@@ -5,11 +5,25 @@ class SongCompiler extends Component {
         const {song} = this.props;
         let newSong = {
             name: song.name,
-            image: song.img
+            image: song.img,
+            eId: this.handleEid(song.eId)
         }
         
         this.props.addFn(newSong);
         this.props.refreshFn();
+    }
+
+    handleEid = (eId) => {
+        if(eId.includes('/yt/')){
+            return "https://youtube.com/watch?v=" + eId.slice(4)
+        }
+        if(eId.includes('/sc/')){
+            return "https://soundcloud.com/" + eId.slice(4)
+        }
+        if(eId.includes('/vi/')){
+            return "https://vimeo.com/" + eId.slice(4)
+        }
+       
     }
     
     render() {

@@ -2,9 +2,10 @@ import React from 'react';
 
 const Header = () => {
     return (
-        <div>
-            <h1>Add songs to your playlist!</h1>
-        </div>
+        <section className="header">
+            <h1>Plotify!</h1>
+            <h3>Add songs to your playlist!</h3>
+        </section>
     )
 }
 

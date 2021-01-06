@@ -1,6 +1,8 @@
 * {
   margin:0;
   padding:0;
+  /* font-family:'Do Hyeon'; */
+  /* font-weight: bold; */
 }
 
 .App {
@@ -17,38 +19,83 @@ img{
   width:150px;
 }
 
+.main-container-1{
+  background:rgb(120, 128, 124);
+  border: 3px solid rgb(87, 99, 93);
+}
+
 .song-flex{
   display: flex;
   justify-content: space-around;
   /* flex-wrap: wrap; */
-  margin:10px;
+  /* margin:10px; */
   text-align: start;
   flex-flow: row wrap;
-  background:rgb(87, 99, 93);
+  background:rgb(120, 128, 124);
   /* align-items: center; */
   /* padding:10px; */
   align-content: space-evenly;
+  
 }
 
 .song-flex div{
   width:150px;
-  padding:10px;
+  padding:25px;
   /* align-items: center; */
 }
 
 .song-title{
-  color:rgb(184, 183, 202)
+  color:rgb(196, 207, 207);
+  text-align:center;
+  font-family:'Arvo';
+}
+
+.header{
+  display:flex;
+  text-align:center;
+  flex-flow: column wrap;
 }
 
 h1{
-  padding:40px;
-  color:rgb(165, 201, 179)
+  /* padding:40px; */
+  color:rgb(196, 207, 207);
+  font-family:'Indie Flower';
+  font-size: 60px;
+  padding:30px;
+}
+
+h2{
+  padding-top:70px;
+  margin-left:30px;
+  margin-bottom:50px;
+  color:rgb(196, 207, 207);
+  font-family:'Arvo';
+  align-self: start;
+  /* text-decoration: underline 2px solid  rgb(169, 253, 211); */
+  border-bottom:2px solid  rgb(180, 206, 193)
+  /* width:100%; */
+}
+
+h3{
+  padding-left:20px;
+  color:rgb(196, 207, 207);
+  font-family:'Arvo';
+  align-self: start;
+  margin-left:10px;
+  margin-bottom:20px;
+  /* text-decoration: underline 2px solid rgb(169, 253, 211) ; */
+}
+
+.shuffle-button{
+  margin:20px 0px;
+  background-color:rgb(63, 68, 68);
+  color:rgb(196, 207, 207);
 }
 
 button{
   background-color: rgb(184, 183, 202);
   text-align: center;
-  border-radius: 10px;
+  border-radius: 14px;
   padding:6px 8px;
   border: 2px solid rgb(63, 68, 68);
   margin-top: 5px;
@@ -56,32 +103,36 @@ button{
 }
 
 button:hover{
-  background:rgb(63, 68, 68);
-  color:rgb(184, 183, 202);
+  background:rgb(165, 201, 179);
+  color:rgb(63, 68, 68);
 }
 
-div.playlist-div div{
-  /* align-items: center; */
-  padding:0;
-  /* box-sizing: border-box; */
- 
-}
-
-.song-flex-playlist{
-  display: flex;
-  justify-content: flex-start;
-  /* flex-wrap: wrap; */
-  margin:10px;
-  text-align: start;
+.song-shelf{
+  display:flex;
   flex-flow: row wrap;
-  background:rgb(87, 99, 93);
-  /* align-items: center; */
-  /* padding:10px; */
-  align-content: space-evenly;
+  height:450px;
+  border-bottom: 3px solid rgb(87, 99, 93);
+  margin-top:40px;
 }
 
-.song-flex-playlist div{
-  width:150px;
-  padding:10px;
-  /* align-items: center; */
+.song-info{
+  display:flex;
+  flex-flow: column wrap;
+  width:25%;
+  margin-left: 50px;
+  margin-top: 80px;
+}
+
+.playlist-main-container{
+  display:flex;
+  flex-flow:column wrap;
+  background-color:rgb(63, 68, 68)
+}
+
+.react-player{
+  /* position:relative; */
+  /* left:260px;
+  bottom:220px; */
+  height:200px;
+  margin-left: 100px;
 }

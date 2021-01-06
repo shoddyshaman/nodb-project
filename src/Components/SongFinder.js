@@ -19,7 +19,7 @@ class SongFinder extends Component {
         axios.get('/api/fresh-songs')
         .then(response => {
             this.setState({freshSongs: response.data})
-            // console.log(response.data)
+            // console.log(this.state.freshSongs[0].eId)
         })
         .catch(err => console.error(err))
     }
@@ -34,9 +34,12 @@ class SongFinder extends Component {
             refreshFn={this.getFreshSongs}/>
         ))
         return (
+            <section className="main-container-1">
             <div className="song-flex">
                 {mappedSongs}
             </div>
+            <button className="shuffle-button" onClick={this.getFreshSongs}>Shuffle</button>
+            </section>
         )
     }
 }
