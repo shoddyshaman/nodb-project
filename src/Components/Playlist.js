@@ -12,7 +12,7 @@ const Playlist = props => {
 
     return (
         <section className="playlist-main-container">
-            <h2>My Plotify Playlist</h2>
+            <h2>My  <em>  Plotify!  </em>  Playlist</h2>
             <div>{mappedSong}</div>
         </section>
     )

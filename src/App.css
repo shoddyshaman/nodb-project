@@ -61,7 +61,13 @@ h1{
   color:rgb(196, 207, 207);
   font-family:'Indie Flower';
   font-size: 60px;
-  padding:50px;
+  padding:40px;
+}
+
+em{
+  font-family:'Indie Flower';
+  font-style: normal;
+  font-size:35px
 }
 
 h2{
@@ -70,10 +76,11 @@ h2{
   margin-bottom:50px;
   color:rgb(196, 207, 207);
   font-family:'Arvo';
-  align-self: start;
+  align-self: center;
   /* text-decoration: underline 2px solid  rgb(169, 253, 211); */
-  border-bottom:2px solid  rgb(180, 206, 193)
+  /* border-bottom:2px solid  rgb(180, 206, 193); */
   /* width:100%; */
+  font-size:30px;
 }
 
 h3{
@@ -81,8 +88,8 @@ h3{
   color:rgb(196, 207, 207);
   font-family:'Arvo';
   align-self: start;
-  margin-left:10px;
-  margin-bottom:8px;
+  margin-top:30px;
+  
   /* text-decoration: underline 2px solid rgb(169, 253, 211) ; */
 }
 
@@ -126,7 +133,8 @@ button:hover{
 .playlist-main-container{
   display:flex;
   flex-flow:column wrap;
-  background-color:rgb(63, 68, 68)
+  background-color:rgb(63, 68, 68);
+  justify-content: space-evenly;
 }
 
 .react-player{
